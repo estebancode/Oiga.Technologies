@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true" assembly="Oiga.Technologies.Data.Entities" namespace="Oiga.Technologies.Data.Entities.Entity">
+  <class name="User" table="`User`" dynamic-update="true" >
+    <cache usage="read-write"/>
+    <id name="Id" column="Id" type="int">
+      <generator class="native" />
+    </id>
+
+    <property name="UserName"  />
+    <property name="UserPass" />
+    <property name="CreationDate" />
+    <property name="UpdateDate" />
+  </class>
+</hibernate-mapping> 
